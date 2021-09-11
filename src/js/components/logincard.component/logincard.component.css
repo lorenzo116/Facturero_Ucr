@@ -1,0 +1,68 @@
+.container{
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: thin;
+    border-color: gray;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    
+}
+div div div{
+    text-align: center;
+    border: none;
+    width: 250px;
+    height: 50px;
+    margin: auto;
+
+}
+label{
+    align-items: center;
+    text-align: center;
+}
+input{
+    background-color: rgb(213, 213, 228);
+    width: 200px;
+    height: 30px;
+    font-family: inherit;
+    text-align: center;
+    border-radius: 5px;
+    border-width: thin;
+    background-color: transparent;
+    border-style: solid;
+}
+.submit{
+    width: 75px;
+    border-radius: 50px;
+    border-width: thin;
+    height: 30;
+
+}
+.logo{
+    text-align: center;
+    margin-top: 10%;
+    width: 110px;
+    height: 110px;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.buttom{
+display: flex;
+justify-content: center;
+}
+.olvido{
+    font-size: 12px;
+}
