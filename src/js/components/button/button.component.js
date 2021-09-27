@@ -11,6 +11,7 @@ export class ButtonWebComponent extends HTMLElement {
 
     }
     connectedCallback() {
+        this.shadowRoot.querySelector('button').innerHTML = this.getAttribute('text');
         this.shadowRoot.querySelector('button').addEventListener('click', function (e) {
 
             let x = e.clientX - e.target.offsetLeft;
