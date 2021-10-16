@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,4EAAI;AACZ,OAAO,CAAC,6BAAI;AAGZ,AAAA,KAAK,CAAA;EACD,YAAY,CAAA,IAAC;CAChB;;AACD,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,UAAU;EACtB,qBAAqB;CACpB;;AACD,AAAA,CAAC,EAAE,CAAC,AAAA,OAAO,EAAE,CAAC,AAAA,MAAM,CAAC;EACnB,UAAU,EAAE,OAAO;CACpB;;AACD,AAAA,CAAC,CAAA;EACC,WAAW,EAAE,oBAAoB;CAClC",
+    "sources": [
+        "../../src/style/facturero.global.scss"
+    ],
+    "names": [],
+    "file": "facturero.global.css"
+}
