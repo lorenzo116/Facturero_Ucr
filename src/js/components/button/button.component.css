@@ -3,8 +3,6 @@ button{
     display: inline-block;
     /*align-self: flex-end;*/
     background: #5264AE;
-    width: 150px;
-    height: 50px;
     color: #E1F5FE;
     text-decoration: none;
     text-transform: uppercase;
@@ -12,6 +10,7 @@ button{
     margin: 1rem;
     border-radius: 6px;
     overflow: hidden;
+    font-family: 'Titillium Web', sans-serif;
 }
 button:active {
     outline: none;
