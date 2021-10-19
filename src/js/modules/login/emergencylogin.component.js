@@ -1,7 +1,7 @@
-import html from './login.component.html';
-import css from './login.component.css';
+import html from './emergencylogin.component.html';
+import css from './emergencylogin.component.css';
 
-export class LoginWebComponent extends HTMLElement {
+export class EmergencyloginWebComponent extends HTMLElement {
     constructor() {
         super();
         const template = document.createElement('template');
@@ -14,4 +14,4 @@ export class LoginWebComponent extends HTMLElement {
     }
 }
 
-customElements.define('fa-login', LoginWebComponent)
+customElements.define('fa-emergencylogin', EmergencyloginWebComponent)
