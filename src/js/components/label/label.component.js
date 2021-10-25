@@ -9,6 +9,9 @@ export class LabelWebComponent extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true));
     }
     connectedCallback() {
+        if(this.getAttribute('mode')=== 'title'){
+            this.shadowRoot.querySelector('label').classList.add('title')
+        }
     }
 }
 customElements.define('fa-label', LabelWebComponent);
