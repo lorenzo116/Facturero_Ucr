@@ -1,43 +1,36 @@
-button{
-    position: relative;
-    display: inline-block;
-    /*align-self: flex-end;*/
-    background: #5264AE;
-    width: 150px;
-    height: 50px;
-    color: #E1F5FE;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 1rem;
-    border-radius: 6px;
-    overflow: hidden;
+button {
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  padding: 1rem 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
-button:active {
-    outline: none;
-    border: none;
-  }
-span {
-  position: absolute;
-  background: #747ea7;
-  transform: translate(-50%,-50%);
-  pointer-events: none;
+span.ripple-primary-button {
+  position: absolute; /* The absolute position we mentioned earlier */
   border-radius: 50%;
-  animation: animate 1s linear forwards;
-  mix-blend-mode: difference;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: rgba(255, 255, 255, 0.7);
 }
-@keyframes animate
-{
-  0%
-  {
-    width: 0px;
-    height: 0px;
-    opacity: 0.5;
-  }
-  100%
-  {
-    width: 500px;
-    height: 500px;
+@keyframes ripple {
+  to {
+    transform: scale(4);
     opacity: 0;
   }
+}
+.primary-button {
+  color: #fff;
+  background-color: #6200ee;
+}
+.secondary-button {
+  color: #c04848;
+  background-color: #fff;
+  border: 3px solid #c04848;
+  border-radius: 8px 8px 8px 8px;
 }
