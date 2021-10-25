@@ -7,4 +7,5 @@ import { ResultbillcreationWebComponent } from "./modules/resultbillcreation/res
 import { LabelWebComponent } from "./components/label/label.component";
 import { CalendarWebComponent } from "./components/caledar/calendar.component";
 import { CreatereservationWebComponent } from "./modules/createreservation/createreservation.component";
+import { TextareaWebComponent } from "./components/textarea/textarea.component";
 import './../style/facturero.global.scss';
