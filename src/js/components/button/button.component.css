@@ -1,42 +1,75 @@
-button{
-    position: relative;
-    display: inline-block;
-    /*align-self: flex-end;*/
-    background: #5264AE;
-    color: #E1F5FE;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 1rem;
-    border-radius: 6px;
-    overflow: hidden;
-    font-family: 'Titillium Web', sans-serif;
+
+
+/* Button style */
+button {
+  border: none;
+  border-radius: 2px;
+  padding: 12px 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 0 4px #999;
+  outline: none;
 }
-button:active {
-    outline: none;
-    border: none;
-  }
-span {
-  position: absolute;
-  background: #747ea7;
-  transform: translate(-50%,-50%);
-  pointer-events: none;
-  border-radius: 50%;
-  animation: animate 1s linear forwards;
-  mix-blend-mode: difference;
+
+.primaryButton {
+  color: white;
+  background-color: #2196f3;
+  background-position: center;
+  transition: background 0.8s;
 }
-@keyframes animate
-{
-  0%
-  {
-    width: 0px;
-    height: 0px;
-    opacity: 0.5;
-  }
-  100%
-  {
-    width: 500px;
-    height: 500px;
-    opacity: 0;
-  }
+.primaryButton:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.primaryButton:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+.primaryButton-outlined {
+  background-color: white;
+  color: #2196f3;
+  border: 1px solid #2196f3;
+  background-position: center;
+  transition: background 0.8s;
+}
+.primaryButton-outlined:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.primaryButton-outlined:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.secondaryButton {
+  color: white;
+ background-color: #C04848;
+ background-position: center;
+ transition: background 0.8s;
+}
+.secondaryButton:hover {
+ background: #eb5f5f radial-gradient(circle, transparent 1%, #eb5f5f 1%) center/15000%;
+}
+.secondaryButton:active {
+ background-color: #ec8383;
+ background-size: 100%;
+ transition: background 0s;
+}
+
+.secondaryButton-outlined {
+  background-color: white;
+  color: #C04848;
+  border: 1px solid #C04848;
+  background-position: center;
+  transition: background 0.8s;
+}
+.secondaryButton-outlined:hover {
+  background: #eec5c5 radial-gradient(circle, transparent 1%, #eec5c5 1%) center/15000%;
+}
+.secondaryButton-outlined:active {
+  background-color: #ec8383;
+  background-size: 100%;
+  transition: background 0s;
+
 }

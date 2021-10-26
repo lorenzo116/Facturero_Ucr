@@ -8,5 +8,8 @@ import { DropdownWebComponent } from "./components/dropdown/dropdown.component";
 import { ResultbillcreationWebComponent } from "./modules/resultbillcreation/resultbillcreation.component";
 import { LabelWebComponent } from "./components/label/label.component";
 import { HomeviewWebComponent } from "./modules/homeview/homeview.component";
+import { CalendarWebComponent } from "./components/caledar/calendar.component";
+import { CreatereservationWebComponent } from "./modules/createreservation/createreservation.component";
+import { TextareaWebComponent } from "./components/textarea/textarea.component";
 
 import './../style/facturero.global.scss';

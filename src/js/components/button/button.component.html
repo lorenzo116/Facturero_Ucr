@@ -1,2 +1,6 @@
 <!--<input type="submit" value="Enviar" class="fa-button">-->
-<button type="submit" value="" class="fa-button"></button>
+<button class="primaryButton" type="submit" value="">
+    <slot name="textButton">
+        <span>Enviar</span>
+    </slot>
+</button>

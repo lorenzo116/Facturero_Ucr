@@ -1,5 +1,14 @@
 label{
+<<<<<<< HEAD
     margin: 1rem; 
     font-family: 'Titillium Web', sans-serif;
     color: white;
 }
+=======
+}
+.title{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+>>>>>>> braulio
