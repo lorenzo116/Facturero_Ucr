@@ -17,6 +17,11 @@ export class TextfieldWebComponent extends HTMLElement {
         this.shadowRoot.querySelector('input').name = this.getAttribute('for');
         if(this.getAttribute('type')){
             this.shadowRoot.querySelector('input').type = this.getAttribute('type')
+            if(this.getAttribute('type') === 'number'){
+                //this.shadowRoot.querySelector('input').classList.add('numberInput');
+                console.log(this.shadowRoot.querySelector('#bar'));
+                this.shadowRoot.querySelector('#bar').classList.add('barNumber');
+            }
         }
     }
 }

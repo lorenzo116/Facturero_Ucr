@@ -1,16 +1,21 @@
-/* form starting stylings ------------------------------- */
+* {
+  box-sizing: border-box;
+}
 .group {
   position: relative;
   margin-bottom: 45px;
 }
 input {
+  background-color: transparent;
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
   width: 300px;
   border: none;
   border-bottom: 1px solid #757575;
-  background: transparent;
+}
+input[type="number"]{
+  width: 100px;
 }
 input:focus {
   outline: none;
@@ -19,6 +24,7 @@ input:focus {
 /* LABEL ======================================= */
 label {
   color: #999;
+  background-color: transparent;
   font-size: 18px;
   font-weight: normal;
   position: absolute;
@@ -29,13 +35,15 @@ label {
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
 }
-
+input[type="number"]{
+  width: 150px;  
+}
 /* active state */
 input:focus ~ label,
 input:valid ~ label {
   top: -20px;
   font-size: 14px;
-  color: #fff;
+  color: #5264ae;
 }
 
 /* BOTTOM BARS ================================= */
@@ -51,7 +59,7 @@ input:valid ~ label {
   width: 0;
   bottom: 1px;
   position: absolute;
-  background: #2196f3;
+  background: #5264ae;
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
@@ -62,7 +70,29 @@ input:valid ~ label {
 .bar:after {
   right: 50%;
 }
-
+.barNumber{
+  position: relative;
+  display: block;
+  width: 150px;
+}
+.barNumber:before,
+.barNumber:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264ae;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.barNumber:before {
+  left: 50%;
+}
+.barNumber:after {
+  right: 50%;
+}
 /* active state */
 input:focus ~ .bar:before,
 input:focus ~ .bar:after {
@@ -90,7 +120,7 @@ input:focus ~ .highlight {
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
   from {
-    background: #2196f3;
+    background: #5264ae;
   }
   to {
     width: 0;
@@ -99,7 +129,7 @@ input:focus ~ .highlight {
 }
 @-moz-keyframes inputHighlighter {
   from {
-    background: #2196f3;
+    background: #5264ae;
   }
   to {
     width: 0;
@@ -108,7 +138,7 @@ input:focus ~ .highlight {
 }
 @keyframes inputHighlighter {
   from {
-    background: #2196f3;
+    background: #5264ae;
   }
   to {
     width: 0;

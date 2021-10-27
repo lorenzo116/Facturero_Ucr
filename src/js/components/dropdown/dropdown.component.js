@@ -9,10 +9,7 @@ export class DropdownWebComponent extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true));
     }
     connectedCallback() {
-        console.log(this.shadowRoot.querySelector('select'));
-        console.log(Array.from(this.querySelectorAll('option')));
         for (const iterator of Array.from(this.querySelectorAll('option'))) {
-            console.log(iterator);
             this.shadowRoot.querySelector('select').add(iterator)
         }
     }
