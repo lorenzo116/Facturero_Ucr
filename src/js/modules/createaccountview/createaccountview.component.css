@@ -1,20 +1,10 @@
 div{
-    
-    
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    margin-top: 100px;
-
-
-
-   
+    margin-top: 100px;   
 }
-fa-label{
+.grid{
+    display: grid;
+    grid-row-gap: 25px;
     text-align: center;
-}
-button.fa-button{
-    height: 40px;
-    height: 190px;
 }

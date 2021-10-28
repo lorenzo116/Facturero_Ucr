@@ -1,5 +1,4 @@
 div{
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -10,6 +9,8 @@ fa-label{
     font-size: 30px;
 }
 
-button.fa-button{
-    width: 200px;
+.grid{
+    display: grid;
+    grid-row-gap: 25px;
+    text-align: center;
 }

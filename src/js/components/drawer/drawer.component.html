@@ -1,23 +1,34 @@
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+    <div>
+      <section class="hero">
+        <h1>side-drawer</h1>
+        
+        <div class="hero-demo">
+          <wc-menu-button id="menuButton"></wc-menu-button>
+         
+        </div>
+      </section>
 
-<aside class="mdc-drawer">
-    <div class="mdc-drawer__content">
-      <nav class="mdc-list">
-        <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
-          <span class="mdc-list-item__ripple"></span>
-          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
-          <span class="mdc-list-item__text">Inbox</span>
-        </a>
-        <a class="mdc-list-item" href="#">
-          <span class="mdc-list-item__ripple">hola</span>
-          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
-          <span class="mdc-list-item__text">Outgoing</span>
-        </a>
-        <a class="mdc-list-item" href="#">
-          <span class="mdc-list-item__ripple"></span>
-          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
-          <span class="mdc-list-item__text">Drafts</span>
-        </a>
-      </nav>
     </div>
-  </aside>
+
+    <side-drawer id="drawer"
+      ><div class="drawer-sample-container">
+        <div>
+          <div>This is the drawer!</div>
+          <div style="padding: 21px 0px">
+            You can close the drawer with the escape key or by clicking/tapping
+            outside the drawer.
+          </div>
+          <div style="padding: 21px 0px">
+            Use your browser dev tools to inspect the CSS and see an example of
+            customizing the drawer.
+          </div>
+          <div style="font-size: 16px; margin-top: 21px">
+            The hamburger menu button that's used to open this drawer is the
+            <a href="https://github.com/wes566/wc-menu-button" target="_blank"
+              >wc-menu-button</a
+            >
+          </div>
+        </div>
+        <div style="font-size: 16px">Hello there &#x1F44B;</div>
+      </div></side-drawer    >

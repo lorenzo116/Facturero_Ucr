@@ -11,5 +11,7 @@ import { HomeviewWebComponent } from "./modules/homeview/homeview.component";
 import { CalendarWebComponent } from "./components/caledar/calendar.component";
 import { CreatereservationWebComponent } from "./modules/createreservation/createreservation.component";
 import { TextareaWebComponent } from "./components/textarea/textarea.component";
-
+import { DrawerWebComponent } from "./components/drawer/drawer.component";
+import "side-drawer";
 import './../style/facturero.global.scss';
+
