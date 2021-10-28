@@ -1,28 +1,33 @@
-    <div>
-      <section class="hero">
-        <h1>side-drawer</h1>
-        
-        <div class="hero-demo">
+    
+      <div class="top-bar">
+        <div class="icon">
           <wc-menu-button id="menuButton"></wc-menu-button>
-         
         </div>
-      </section>
+          
+        
+        <div class="logo">
+          <fa-logo></fa-logo>
+        </div>
 
-    </div>
+      </div>
+
+    
 
     <side-drawer id="drawer" >
-      <div class="drawer-sample-container">
-        <div>
-          <ul>
-            <span slot="textList">Fuera de la lista</span>  
-            
-            
-            <fa-itemlist>
-              <span slot="textList">Fuera de la lista</span>  
-            </fa-itemlist>
-           
-            
-          </ul>
-        <div style="font-size: 16px">Hello there &#x1F44B;</div>
+      <div class="drawer-container">
+        <div class="user">
+         
+        </div>
+        <div class="grid">
+          <fa-label>
+            <span slot="label">Javier Rodriguez</span>
+          </fa-label>
+          <a href="#">Mis credenciales</a>
+          <a href="#">Personalización</a>
+          <a href="#">Reportes</a>
+          <a href="#">Edición personas</a>
+          <a href="#">Salir</a>
+          
+        
       </div>
     </side-drawer>
