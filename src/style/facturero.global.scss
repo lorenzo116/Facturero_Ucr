@@ -1,32 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap");
-@import url("./modern-normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap');
+@import url('./modern-normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
 
-:root {
-  --main-color: #eec5c5;
+  
+:root{
+ 
+    --main-color: #eec5c5;
+
 }
 html {
-  box-sizing: border-box;
-  /*font-size: 62.5%;*/
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-* {
-  font-family: "Roboto", sans-serif;
-}
-body {
-  background: #c04848; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #480048,
-    #c04848
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #480048,
-    #c04848
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-family: "Roboto", sans-serif;
-}
+    box-sizing: border-box;
+    /*font-size: 62.5%;*/
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    *{
+      font-family: 'Roboto', sans-serif;
+    }
+  body{
+    background: #C04848;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Roboto', sans-serif;
+
+  }
