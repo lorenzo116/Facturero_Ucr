@@ -12,6 +12,7 @@ import { CalendarWebComponent } from "./components/caledar/calendar.component";
 import { CreatereservationWebComponent } from "./modules/createreservation/createreservation.component";
 import { TextareaWebComponent } from "./components/textarea/textarea.component";
 import { DrawerWebComponent } from "./components/drawer/drawer.component";
+import { TexpayereditWebComponent } from "./modules/taxpayeredit/taxpayeredit.component";
 
 import "side-drawer";
 import './../style/facturero.global.scss';
