@@ -13,6 +13,7 @@ import { CreatereservationWebComponent } from "./modules/createreservation/creat
 import { TextareaWebComponent } from "./components/textarea/textarea.component";
 import { DrawerWebComponent } from "./components/drawer/drawer.component";
 import { TexpayereditWebComponent } from "./modules/taxpayeredit/taxpayeredit.component";
+import { RadioWebComponent } from "./components/radio/radio.component";
 
 import "side-drawer";
 import './../style/facturero.global.scss';
