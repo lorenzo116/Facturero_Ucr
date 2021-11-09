@@ -9,9 +9,10 @@ export class RadiobuttonWebComponent extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true));
     }
     connectedCallback() {
-        for (const iterator of Array.from(this.querySelectorAll('input'))) {
+        /*for (const iterator of Array.from(this.querySelectorAll('input'))) {
             this.shadowRoot.querySelector('select').add(iterator)
-        }
+        }*/
+        this.shadowRoot.querySelector('input')
     }
 }
 customElements.define('fa-radiobutton', RadiobuttonWebComponent);
