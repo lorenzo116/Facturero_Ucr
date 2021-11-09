@@ -14,6 +14,8 @@ import { TextareaWebComponent } from "./components/textarea/textarea.component";
 import { DrawerWebComponent } from "./components/drawer/drawer.component";
 import { TexpayereditWebComponent } from "./modules/taxpayeredit/taxpayeredit.component";
 import { RadioWebComponent } from "./components/radio/radio.component";
+import { AddUserViewWebComponent } from "./modules/adduserview/adduserview.component";
+import { AddClienteViewWebComponent } from "./modules/addclienteview.component/addclienteview.component";
 
 import "side-drawer";
 import './../style/facturero.global.scss';
