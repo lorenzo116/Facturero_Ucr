@@ -12,24 +12,18 @@ export class DrawerWebComponent extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true));
     }
  
-
     connectedCallback() {
-   
         const menuButton = this.shadowRoot.querySelector("#menuButton");
         const drawer = this.shadowRoot.querySelector("#drawer");
-
         menuButton.addEventListener("opened", ev => {
           drawer.open = true;
         });
-
         drawer.addEventListener("open", ev => {
           menuButton.open = true;
         });
-
         drawer.addEventListener("close", ev => {
           menuButton.open = false;
         });
-
     }
 }
 customElements.define('fa-drawer', DrawerWebComponent);
