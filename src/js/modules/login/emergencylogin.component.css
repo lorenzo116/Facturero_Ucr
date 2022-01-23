@@ -1,0 +1,21 @@
+/**/
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+h5{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.pieDePagina{
+    margin-top: 50px;
+    text-align: center;
+}
+fa-label{
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
