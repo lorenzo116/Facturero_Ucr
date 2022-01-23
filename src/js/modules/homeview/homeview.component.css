@@ -1,0 +1,16 @@
+div{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+fa-label{
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid{
+    display: grid;
+    grid-row-gap: 25px;
+    text-align: center;
+}

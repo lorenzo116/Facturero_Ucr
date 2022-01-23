@@ -1,10 +1,10 @@
-import html from './button.component.html';
-import css from './button.component.css';
+import html from './a.component.html';
+import css from './a.component.css';
 
-export class ButtonWebComponent extends HTMLElement {
+export class AWebComponent extends HTMLElement {
     constructor(){
         super();
-        this._id = 0;
+        this._num = 0;
         const template = document.createElement('template');
         template.innerHTML =`<style>${css}</style>` + html;
         this.attachShadow({mode: 'open'});
@@ -13,7 +13,7 @@ export class ButtonWebComponent extends HTMLElement {
     }
     connectedCallback() {
         
-        //this.shadowRoot.querySelector('button').innerHTML = this.getAttribute('text');
+        this.shadowRoot.querySelector('button').innerHTML = this.getAttribute('text');
         this.shadowRoot.querySelector("button").addEventListener("click", this);
         this.shadowRoot.querySelector('button').addEventListener('click', function (e) {
             let x = e.clientX - e.target.offsetLeft;
@@ -29,18 +29,18 @@ export class ButtonWebComponent extends HTMLElement {
             }, 1000);
         });
     }
-    get id() { 
-        return this._id;
+    get num() { 
+        return this._num;
     }
-    set id(id) {
-        this._id = id;
+    set num(num) {
+        this._num = num;
     }
     handleEvent(e) {
         if (e.type === "click") {
             
-            const MessageEvent = new CustomEvent("message", {
+            const MessageEvent = new CustomEvent("messageA", {
                 detail: { 
-                    id: this._id
+                    num: this._num
                 },
                 bubbles: true,
                 composed: true
@@ -50,4 +50,4 @@ export class ButtonWebComponent extends HTMLElement {
     }
 }
 
-customElements.define('fa-button', ButtonWebComponent)
+customElements.define('fa-a', AWebComponent)

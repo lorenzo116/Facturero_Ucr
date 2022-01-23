@@ -1,0 +1,26 @@
+.logo{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.img{
+    max-width: 70px;
+}
+
+img{
+    width: 85%;
+    height: 100%;
+}
+
+.label{
+    text-align: center;
+    height: 100%;
+}
+
+h1{
+    font-family: 'Gugi';
+    font-weight: normal;
+    font-size: 1.7rem;
+    color: white;
+}
