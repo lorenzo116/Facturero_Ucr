@@ -1,0 +1,7 @@
+@import url('/src/style/prueba.css');
+div{
+    padding-top: 20px;
+}
+slot[name=content]{
+    color: red;
+}
