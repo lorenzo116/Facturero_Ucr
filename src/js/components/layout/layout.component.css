@@ -1,0 +1,7 @@
+slot[name=content]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-direction: column;
+}
