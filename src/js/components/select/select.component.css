@@ -1,0 +1,10 @@
+div{
+    max-width: 40vw;
+    background-color: rebeccapurple;
+}
+slot[name="titulo"] {
+    color: aqua;
+}
+slot[name="informacion"]{
+    color:darkkhaki;
+}
