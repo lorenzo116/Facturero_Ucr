@@ -3,8 +3,13 @@
     <span class="highlight"></span>
     <span id="bar" class="bar"></span>
     <label for="">
-        <slot name="label">
-            <span></span>
+        <slot name="fa-textfield-label">
+            <span>This is a label</span>
         </slot>
     </label>
+    <p class="error-message not-display">
+        <slot name="fa-textfield-error">
+            <span>There was an error</span>
+        </slot>
+    </p>
 </div>
