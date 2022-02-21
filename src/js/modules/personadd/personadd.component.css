@@ -1,0 +1,12 @@
+div{
+    margin: 10px;
+    display: grid;
+    grid-column: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.nom{
+    width: 50px;
+    size: 50%;
+}

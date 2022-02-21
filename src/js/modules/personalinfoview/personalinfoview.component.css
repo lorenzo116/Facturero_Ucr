@@ -1,0 +1,11 @@
+div{
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+label{
+    text-align: left;
+}

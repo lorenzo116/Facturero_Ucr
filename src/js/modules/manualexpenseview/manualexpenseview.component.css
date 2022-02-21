@@ -1,0 +1,15 @@
+
+.grid{
+    display: grid;
+    grid-row-gap: 25px;
+    text-align: left;
+    grid-row: auto;
+  }
+div{
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+}

@@ -1,3 +1,40 @@
-<fa-radio>
-    <span slot="label">CREAR CUENTA NUEVA</span>
-</fa-radio>
+<fa-drawer></fa-drawer>
+<div class="body">
+
+    <Label>
+        <span slot="label"> Tipo</span>
+    </Label>
+    <div class="radios">
+        <input type="radio" name="tipodedetalle" value="1">Producto
+        <input type="radio" name="tipodedetalle" value="2">Servicio Profesional
+        <input type="radio" name="tipodedetalle" value="3">Servicio Hospedaje
+        <input type="radio" name="tipodedetalle" value="3">Servicio Alquiler
+    </div>
+    
+    <Label>
+        <span slot="label"> Detalles del producto</span>
+    </Label>
+    
+    <fa-textfield for="detail" text="Habitacion sensilla" type="text"></fa-textfield>
+    
+    <fa-textfield for="cabbys" text="Cabbys" type="text"></fa-textfield>
+    
+    <div class="amounts">    
+    <fa-textfield for="cantidad" text="Cantidad" type="number" ></fa-textfield>
+    <fa-textfield for="monto" text="Monto" type="number" ></fa-textfield>
+    </div>
+    <input type="radio" name="exento" value="1">Exento
+    <fa-button>
+        <span slot="textButton">Agregar Exoneracion</span>
+    </fa-button>
+    
+    <fa-button>
+        <span slot="textButton">Agregar Detalle</span>
+    </fa-button>
+</div>
+
+
+
+
+
+

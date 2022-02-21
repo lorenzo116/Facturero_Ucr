@@ -1,0 +1,25 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+label{
+    margin: 45px;
+}
+
+.amounts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.radios{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    justify-content: center;
+    
+}

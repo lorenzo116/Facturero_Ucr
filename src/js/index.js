@@ -20,6 +20,7 @@ import { PersonAddViewWebComponent } from "./modules/personadd/personadd.compone
 import { PersonlInfoViewWebComponent } from "./modules/personalinfoview/personalinfoview.component";
 import { ManualExpenseViewWebComponent } from "./modules/manualexpenseview/manualexpenseview.component";
 import { DetailedbillinfoWebComponent } from "./modules/detailedbillinfo/detailedbillinfo.component";
+import { DetailAddWebComponent } from "./modules/detailadd/detailadd.component";
 
 import "side-drawer";
 import './../style/facturero.global.scss';

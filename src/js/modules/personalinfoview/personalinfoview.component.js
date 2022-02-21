@@ -1,6 +1,7 @@
-import html from './detailadd.component.html';
-import css from './detailadd.component.css';
-export class DetailAddWebComponent extends HTMLElement {
+import html from './personalinfoview.component.html';
+import css from './personalinfoview.component.css';
+
+export class PersonlInfoViewWebComponent extends HTMLElement {
     constructor(){
         super();
         const template = document.createElement('template');
@@ -8,8 +9,7 @@ export class DetailAddWebComponent extends HTMLElement {
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
     }
-    connectedCallback(){
-
+    connectedCallback() {
     }
 }
-customElements.define('fa-detailadd', DetailAddWebComponent);
+customElements.define('fa-personalinfoview', PersonlInfoViewWebComponent);
