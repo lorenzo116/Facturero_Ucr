@@ -1,7 +1,7 @@
-import html from './loading.component.html';
-import css from './loading.component.css';
+import html from './billvoid.component.html';
+import css from './billvoid.component.css';
 
-export class loadingWebComponent extends HTMLElement {
+export class billvoidWebComponent extends HTMLElement {
     constructor(){
         super();
         const template = document.createElement('template');
@@ -12,4 +12,4 @@ export class loadingWebComponent extends HTMLElement {
     connectedCallback() {
     }
 }
-customElements.define('fa-loading', loadingWebComponent);
+customElements.define('fa-billvoid', billvoidWebComponent);
