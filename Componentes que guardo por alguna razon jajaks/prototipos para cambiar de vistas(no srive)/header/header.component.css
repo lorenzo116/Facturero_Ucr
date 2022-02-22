@@ -1,34 +1,25 @@
 header{
     padding:1rem;
     display:flex;
-    justify-content:space-between;
+    justify-content: flex-end;
     background-color: var(--secondary-color);
 }
-.menu{
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    
-    width: 100%;
-    top: 65px; 
+.flex{
+  display: flex;
+  
 }
-.menu ul{
-    list-style: none;
-    display: flex;
+
+.justify-between{
+
+    justify-content: space-between;
+}
+.justify-center{
+
     justify-content: center;
 }
-
-
-.menu ul li a{
-    padding: .5rem 1rem;
-    text-decoration: none;
-    font-size: 20px;
+.items-center{
+    align-items: center;
 }
-.menu ul li a:hover{
-    text-decoration: underline;
-}
-
-
 .btn-menu{
     background-color:  #958BB6;
     color: white;
@@ -47,13 +38,4 @@ header{
     border: none;
     margin-left: auto;
     display: block;
-}
-img{
-    width: 70px;
-    height: 70px;
-}
-a{
-    margin-top: auto;
-    margin-bottom: auto;
-    text-decoration: none;
 }

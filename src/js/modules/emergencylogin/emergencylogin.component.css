@@ -4,13 +4,22 @@ form{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 h5{
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     font-size: 20px;
 }
 .pieDePagina{
+<<<<<<< HEAD:src/js/modules/emergencylogin/emergencylogin.component.css
     margin-top: 15px;
+=======
+    margin-top: 50px;
+>>>>>>> Braulio:src/js/modules/login/emergencylogin.component.css
     text-align: center;
+}
+fa-label{
+    margin-top: 20px;
+    margin-bottom: 40px;
+
 }

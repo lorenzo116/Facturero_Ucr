@@ -145,3 +145,10 @@ input:focus ~ .highlight {
     background: transparent;
   }
 }
+.error-message {
+  color: red;
+  background: white;
+}
+.not-display{
+  display: none;
+}

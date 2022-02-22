@@ -12,7 +12,7 @@ export class TextfieldWebComponent extends HTMLElement {
     }
     connectedCallback() {
         this.shadowRoot.querySelector('label').htmlFor = this.getAttribute('for');
-        this.shadowRoot.querySelector('label').innerHTML = this.getAttribute('text');
+        /*this.shadowRoot.querySelector('label').innerHTML = this.getAttribute('text');*/
         this.shadowRoot.querySelector('input').id = this.getAttribute('for');
         this.shadowRoot.querySelector('input').name = this.getAttribute('for');
         if(this.getAttribute('type')){

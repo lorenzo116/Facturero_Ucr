@@ -15,6 +15,9 @@ export class ButtonWebComponent extends HTMLElement {
         
         //this.shadowRoot.querySelector('button').innerHTML = this.getAttribute('text');
         this.shadowRoot.querySelector("button").addEventListener("click", this);
+        
+        /*
+        ! Usado para estilo, ya no sirve
         this.shadowRoot.querySelector('button').addEventListener('click', function (e) {
             let x = e.clientX - e.target.offsetLeft;
             let y = e.clientY - e.target.offsetTop;
@@ -27,7 +30,7 @@ export class ButtonWebComponent extends HTMLElement {
             setTimeout(() => {
                 ripples.remove();
             }, 1000);
-        });
+        });*/
     }
     get id() { 
         return this._id;
