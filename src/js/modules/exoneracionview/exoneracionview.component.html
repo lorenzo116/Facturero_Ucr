@@ -1,0 +1,44 @@
+<fa-drawer></fa-drawer>
+<div class="container">
+    <fa-label mode="title">
+        <span slot="fa-label-text">Agregar Exoneración</span>
+    </fa-label>
+
+    <div class="detalle">
+        <fa-dropdown>
+          <option value="Compras Autorizadas">Compras Autorizadas</option>
+          <option value="Ventas exentas a diplomáticos">Ventas exentas a diplomáticos</option>
+          <option value="Orden de Compra">Orden de Compra</option>
+          <option value="Exenciones Dirección General de Hacienda">Exenciones Dirección General de Hacienda</option>
+          <option value="Zonas Francas">Zonas Francas</option>
+          <option value="Otros">Otros</option>
+          <span slot="title">Tipo de exoneración</span>
+        </fa-dropdown>
+    </div>
+
+    <fa-textfield
+        for="cantidad"
+        text="Numero de Documento"
+        type="text"
+    ></fa-textfield>
+
+    <fa-textfield
+        for="cantidad"
+        text="Nombre de Institución"
+        type="text"
+    ></fa-textfield>
+
+    <fa-textfield
+        for="cantidad"
+        text="Fecha de Emisión"
+        type="text"
+    ></fa-textfield>
+
+    <fa-button>
+        <span slot="fa-button-text">Cancelar</span>
+    </fa-button>
+    <fa-button type="secondaryButton">
+        <span slot="fa-button-text">Agregar</span>
+    </fa-button>
+
+</div>
