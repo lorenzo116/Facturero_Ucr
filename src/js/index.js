@@ -49,3 +49,12 @@ const routes = [
     { path: "/expenseslistview", view: "<fa-expenseslistview></fa-expenseslistview>" },
     { path: "/persontaxpayeradd", view: "<fa-persontaxpayeradd></fa-persontaxpayeradd>" },
 ]
+
+document.addEventListener('message', (e) => {
+    console.log(e.detail.href);
+    console.log(routes);
+    let obj = routes.find(route => route.path === e.detail.href);
+
+    console.log(obj.view);
+    document.querySelector("body").innerHTML = obj.view;
+})

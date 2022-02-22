@@ -35,15 +35,15 @@ export class DrawerWebComponent extends HTMLElement {
   handleEvent(e) {
     if (e.type === "click") {
 
-      /*const MessageEvent = new CustomEvent("message", {
+      e.preventDefault();
+      const MessageEvent = new CustomEvent("message", {
         detail: {
-          id: this._id
+          href: e.explicitOriginalTarget.attributes.href.nodeValue
         },
         bubbles: true,
         composed: true
       });
-      this.dispatchEvent(MessageEvent);*/
-      e.preventDefault();
+      this.dispatchEvent(MessageEvent);
       console.log(e.explicitOriginalTarget.attributes.href.nodeValue);
     }
   }
