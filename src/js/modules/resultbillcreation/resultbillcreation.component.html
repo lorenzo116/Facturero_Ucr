@@ -1,67 +1,42 @@
 <fa-drawer></fa-drawer>
 
 <div class="container">
-<div class="module">
+  <div class="module">
+    <fa-textfield for="contacto" text="Nombre del contacto"></fa-textfield>
+    <fa-label>
+      <span slot="fa-label-text">Detalle de la factura</span>
+    </fa-label>
+    <div class="dropdown-lists">
+      <fa-dropdown>
+        <span slot="title">Moneda</span>
+        <option value="Colones">Colones</option>
+        <option value="Dolares">Dolares</option>
+        <option value="Euros">Euros</option>
+      </fa-dropdown>
+      <fa-dropdown>
+        <span slot="title">Método de pago</span>
+        <option value="Efectivo">Efectivo</option>
+        <option value="Tarjeta">Tarjeta</option>
+      </fa-dropdown>
+    </div>
+  </div>
+
   <fa-textfield for="contacto" text="Nombre del contacto"></fa-textfield>
   <fa-label>
-<<<<<<< HEAD
-      <span slot="label">Detalle de la factura</span>
-=======
-    <span slot="fa-label-text">Detalle de la factura</span>
->>>>>>> Braulio
+    <span slot="label">Detalle de la factura</span>
   </fa-label>
-  <div class="dropdown-lists">
-<<<<<<< HEAD
-      <fa-dropdown>
-          <span slot="title">Moneda</span>
-          <option value="Colones">Colones</option>
-          <option value="Dolares">Dolares</option>
-          <option value="Euros">Euros</option>
-      </fa-dropdown>
-      <fa-dropdown>
-          <span slot="title">Método de pago</span>
-          <option value="Efectivo">Efectivo</option>
-          <option value="Tarjeta">Tarjeta</option>
-      </fa-dropdown>
+  <div class="detalle">
+    <button class="ripple">Agregar detalle</button>
   </div>
-</div>
-
-<fa-textfield for="contacto" text="Nombre del contacto"></fa-textfield>
-<fa-label>
-  <span slot="label">Detalle de la factura</span>
-</fa-label>
-<div class="detalle">
-  <button class="ripple">Agregar detalle</button>
-</div>
-<div class="container">
-  <p>SubTotal</p>
-  <p>₡</p>
-  <p>I.V.A</p>
-  <p>₡</p>
-  <p>Total</p>
-  <p>₡</p>
-</div>
-<div class="dropdown-lists">
-  <fa-dropdown>
-    <span slot="title">Moneda</span>
-    <option value="Colones">Colones</option>
-    <option value="Dolares">Dolares</option>
-    <option value="Euros">Euros</option>
-  </fa-dropdown>
-  <fa-dropdown>
-    <span slot="title">Método de pago</span>
-    <option value="Efectivo">Efectivo</option>
-    <option value="Tarjeta">Tarjeta</option>
-  </fa-dropdown>
-</div>
-<fa-button>
-  <span slot="textButton">Enviar</span>
-</fa-button>
-</div>
-
-
-</div>
-=======
+  <div class="container">
+    <p>SubTotal</p>
+    <p>₡</p>
+    <p>I.V.A</p>
+    <p>₡</p>
+    <p>Total</p>
+    <p>₡</p>
+  </div>
+  <div class="dropdown-lists">
     <fa-dropdown>
       <span slot="fa-dropdown-label">Moneda</span>
       <option value="Colones">Colones</option>
@@ -74,5 +49,7 @@
       <option value="Tarjeta">Tarjeta</option>
     </fa-dropdown>
   </div>
+  <fa-button>
+    <span slot="fa-button-text">Enviar</span>
+  </fa-button>
 </div>
->>>>>>> Braulio
