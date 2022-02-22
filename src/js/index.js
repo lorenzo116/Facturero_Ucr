@@ -12,6 +12,13 @@ import { CalendarWebComponent } from "./components/caledar/calendar.component";
 import { CreatereservationWebComponent } from "./modules/createreservation/createreservation.component";
 import { TextareaWebComponent } from "./components/textarea/textarea.component";
 import { DrawerWebComponent } from "./components/drawer/drawer.component";
+import { loadingWebComponent } from "./modules/loading/loading.component";
+import { exoneracionviewWebComponent } from "./modules/exoneracionview/exoneracionview.component";
+import { customizationviewWebComponent } from "./modules/customizationview/customizationview.component";
+import { expensesmenuviewWebComponent } from "./modules/expensesmenuview/expensesmenuview.component";
+import { expenseslistviewComponent } from "./modules/expenseslistview/expenseslistview.component";
+import { billvoidWebComponent } from "./modules/billvoid/billvoid.component";
+import { suscriptionregistrationWebComponent } from "./modules/suscriptionregistration/suscriptionregistration.component";
 
 import "side-drawer";
 import './../style/facturero.global.scss';
