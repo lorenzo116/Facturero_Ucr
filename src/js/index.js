@@ -1,7 +1,8 @@
 import { ButtonWebComponent } from "./components/button/button.component";
 import { TextfieldWebComponent } from "./components/textflied/textfield.component";
 import { EmergencyloginWebComponent } from "./modules/emergencylogin/emergencylogin.component";
-import { RegistroWebComponent } from "./components/registro/registro.component";import { LogoWebComponent } from "./components/logo/logo.component";
+import { RegistroWebComponent } from "./components/registro/registro.component";
+import { LogoWebComponent } from "./components/logo/logo.component";
 import { MainlandingviewWebComponent } from "./modules/mainlandingview/mainlandingview.component";
 import { LoginViewWebComponent } from "./modules/loginview/loginview.component";
 import { DropdownWebComponent } from "./components/dropdown/dropdown.component";
@@ -21,7 +22,12 @@ import { PersonlInfoViewWebComponent } from "./modules/personalinfoview/personal
 import { ManualExpenseViewWebComponent } from "./modules/manualexpenseview/manualexpenseview.component";
 import { DetailedbillinfoWebComponent } from "./modules/detailedbillinfo/detailedbillinfo.component";
 import { DetailAddWebComponent } from "./modules/detailadd/detailadd.component";
-
 import "side-drawer";
+
 import './../style/facturero.global.scss';
+
+
+console.log('Hola');
+
+
 

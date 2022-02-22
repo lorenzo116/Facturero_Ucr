@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",
+    "page": "^1.11.6",
     "side-drawer": "^2.3.0",
     "wc-menu-button": "^3.1.1"
   }
