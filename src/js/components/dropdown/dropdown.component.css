@@ -1,0 +1,10 @@
+.wrap{
+    margin: 40px;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+}
+select{
+    background-color: transparent;
+}

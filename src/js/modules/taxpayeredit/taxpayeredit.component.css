@@ -1,0 +1,8 @@
+.grid{
+    padding: 20px;
+    display: grid;
+    grid-row-gap: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
