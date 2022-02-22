@@ -1,8 +1,6 @@
-
 import html from './option.component.html';
 import css from './option.component.css';
 export class OptionWebComponent extends HTMLElement {
-
     constructor(){
         super();
         const template = document.createElement('template');
