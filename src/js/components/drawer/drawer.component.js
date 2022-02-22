@@ -1,13 +1,7 @@
 import html from './drawer.component.html';
 import css from './drawer.component.css';
 import "wc-menu-button";
-import { callbacks } from 'page';
 
-
-function pers(){
-  document.querySelector('fa-label')
-  .textContent='viewing pers'
-}
 
 export class DrawerWebComponent extends HTMLElement {
     constructor(){
@@ -30,9 +24,6 @@ export class DrawerWebComponent extends HTMLElement {
         drawer.addEventListener("close", ev => {
           menuButton.open = false;
         });
-        pers.addEventListener("click", ev => {
-          
-        })
     }
 }
 customElements.define('fa-drawer', DrawerWebComponent);
