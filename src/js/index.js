@@ -43,7 +43,9 @@ import "side-drawer";
 import './../style/facturero.global.scss';
 
 
-console.log('Hola');
 
-
-
+const routes = [
+    { path: "/personalinfoview", view: "<fa-personalinfoview></fa-personalinfoview>" },
+    { path: "/expenseslistview", view: "<fa-expenseslistview></fa-expenseslistview>" },
+    { path: "/persontaxpayeradd", view: "<fa-persontaxpayeradd></fa-persontaxpayeradd>" },
+]
