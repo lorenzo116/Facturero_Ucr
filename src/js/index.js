@@ -42,19 +42,27 @@ import { PruebaWebComponent } from "./modules/prueba/prueba.component";
 import "side-drawer";
 import './../style/facturero.global.scss';
 
-
+import page from './services/page.js';
 
 const routes = [
     { path: "/personalinfoview", view: "<fa-personalinfoview></fa-personalinfoview>" },
     { path: "/expenseslistview", view: "<fa-expenseslistview></fa-expenseslistview>" },
     { path: "/persontaxpayeradd", view: "<fa-persontaxpayeradd></fa-persontaxpayeradd>" },
 ]
-
-document.addEventListener('message', (e) => {
+const router = (path) => {
+    let route = routes.find(route => route.path === path);
+    document.querySelector("body").innerHTML = route.view;
+};
+page("/personalinfoview", router("/personalinfoview"))
+page("/expenseslistview", router("/expenseslistview"))
+page("/persontaxpayeradd", router("/persontaxpayeradd"))
+page()
+/*document.addEventListener('message', (e) => {
     console.log(e.detail.href);
     console.log(routes);
     let obj = routes.find(route => route.path === e.detail.href);
 
     console.log(obj.view);
     document.querySelector("body").innerHTML = obj.view;
-})
+})*/
+

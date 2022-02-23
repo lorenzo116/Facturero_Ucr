@@ -24,13 +24,13 @@ export class DrawerWebComponent extends HTMLElement {
     drawer.addEventListener("close", ev => {
       menuButton.open = false;
     });
-    this.shadowRoot.querySelectorAll("a")
+    //this.shadowRoot.querySelectorAll("a")
     const as = this.shadowRoot.querySelectorAll("a");
     for (var i = 0; i < as.length; i++) {
       console.log(as[i]);
       as[i].addEventListener("click", this);
     }
-    console.log(as);
+    //console.log(as);
   }
   handleEvent(e) {
     if (e.type === "click") {
