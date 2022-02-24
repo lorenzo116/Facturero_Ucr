@@ -38,13 +38,13 @@ export class DrawerWebComponent extends HTMLElement {
       e.preventDefault();
       const MessageEvent = new CustomEvent("message", {
         detail: {
-          href: e.explicitOriginalTarget.attributes.href.nodeValue
+          href: e.explicitOriginalTarget.attributes.href.nodeValue,
         },
         bubbles: true,
         composed: true
       });
       this.dispatchEvent(MessageEvent);
-      console.log(e.explicitOriginalTarget.attributes.href.nodeValue);
+      //console.log(e.explicitOriginalTarget.attributes.href.nodeValue);
     }
   }
 }

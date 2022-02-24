@@ -50,19 +50,17 @@ const routes = [
     { path: "/persontaxpayeradd", view: "<fa-persontaxpayeradd></fa-persontaxpayeradd>" },
 ]
 const router = (path) => {
+    console.log("jkidsnbhjfd");
     let route = routes.find(route => route.path === path);
     document.querySelector("body").innerHTML = route.view;
 };
-page("/personalinfoview", router("/personalinfoview"))
-page("/expenseslistview", router("/expenseslistview"))
-page("/persontaxpayeradd", router("/persontaxpayeradd"))
-page()
-/*document.addEventListener('message', (e) => {
-    console.log(e.detail.href);
-    console.log(routes);
+
+document.addEventListener('message', (e) => {
+    //console.log(e.detail.href);
+    //console.log(routes);
     let obj = routes.find(route => route.path === e.detail.href);
 
-    console.log(obj.view);
+    //console.log(obj.view);
     document.querySelector("body").innerHTML = obj.view;
-})*/
+})
 
