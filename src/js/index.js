@@ -38,6 +38,7 @@ import { LayoutWebComponent } from "./components/layout/layout.component";
  *  *Este module se usa para pruebas
  */
 import { PruebaWebComponent } from "./modules/prueba/prueba.component";
+import { LinkWebComponent } from "./components/link/link.component";
 
 import "side-drawer";
 import './../style/facturero.global.scss';
@@ -48,6 +49,7 @@ const routes = [
     { path: "/personalinfoview", view: "<fa-personalinfoview></fa-personalinfoview>" },
     { path: "/expenseslistview", view: "<fa-expenseslistview></fa-expenseslistview>" },
     { path: "/persontaxpayeradd", view: "<fa-persontaxpayeradd></fa-persontaxpayeradd>" },
+    { path: "/homeview", view: "<fa-homeview></fa-homeview>" }
 ]
 const router = (path) => {
     console.log("jkidsnbhjfd");
@@ -56,11 +58,12 @@ const router = (path) => {
 };
 
 document.addEventListener('message', (e) => {
+    console.log(e.detail.href);
     //console.log(e.detail.href);
     //console.log(routes);
     let obj = routes.find(route => route.path === e.detail.href);
 
-    //console.log(obj.view);
+    console.log(obj.view);
     document.querySelector("body").innerHTML = obj.view;
 })
 
