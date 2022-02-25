@@ -62,11 +62,8 @@ const router = (path) => {
 
 document.addEventListener('message', (e) => {
     
-    
-
     console.log("Estoy aqui");
-    //console.log(e.detail.href);
-    //console.log(routes);
+    
     let obj = routes.find(route => route.path === e.detail.href);
 
     console.log(obj.view);
