@@ -45,11 +45,14 @@ import './../style/facturero.global.scss';
 
 import page from './services/page.js';
 
+
+
 const routes = [
     { path: "/personalinfoview", view: "<fa-personalinfoview></fa-personalinfoview>" },
     { path: "/expenseslistview", view: "<fa-expenseslistview></fa-expenseslistview>" },
     { path: "/persontaxpayeradd", view: "<fa-persontaxpayeradd></fa-persontaxpayeradd>" },
-    { path: "/homeview", view: "<fa-homeview></fa-homeview>" }
+    { path: "/homeview", view: "<fa-homeview></fa-homeview>" },
+    { path: "/loginview", view: "<fa-loginview></fa-loginview>" }
 ]
 const router = (path) => {
     console.log("jkidsnbhjfd");
@@ -58,7 +61,10 @@ const router = (path) => {
 };
 
 document.addEventListener('message', (e) => {
-    console.log(e.detail.href);
+    
+    
+
+    console.log("Estoy aqui");
     //console.log(e.detail.href);
     //console.log(routes);
     let obj = routes.find(route => route.path === e.detail.href);

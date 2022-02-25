@@ -8,6 +8,7 @@ button {
   cursor: pointer;
   box-shadow: 0 0 4px #999;
   outline: none;
+  margin: 10px;
 }
 
 .primaryButton {

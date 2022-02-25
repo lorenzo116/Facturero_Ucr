@@ -10,6 +10,19 @@ export class MainlandingviewWebComponent extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true));
     }
     connectedCallback() {
+        const comenzar = this.shadowRoot.querySelector("#comenzar");
+        const conocer = this.shadowRoot.querySelector("#conocer");
+        
+       
+       
+
+
+    
     }
+
+   
+
+
+
 }
 customElements.define('fa-mainlandingview', MainlandingviewWebComponent);

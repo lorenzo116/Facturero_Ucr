@@ -5,13 +5,10 @@ div{
     align-items: center;
     justify-content: center;
 }
-fa-logo{
-    margin: auto;
-}
+
 fa-paragraph{   
-    margin: 1rem; 
+    padding: 1rem; 
     text-align: center;
-    font-size: 24px;
     font-family: 'Titillium Web', sans-serif;
     color: white;
 }

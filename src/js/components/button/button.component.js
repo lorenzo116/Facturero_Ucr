@@ -16,6 +16,9 @@ export class ButtonWebComponent extends HTMLElement {
         //this.shadowRoot.querySelector('button').innerHTML = this.getAttribute('text');
         this.shadowRoot.querySelector("button").addEventListener("click", this);
         
+
+
+        
         /*
         ! Usado para estilo, ya no sirve
         this.shadowRoot.querySelector('button').addEventListener('click', function (e) {
@@ -43,11 +46,14 @@ export class ButtonWebComponent extends HTMLElement {
             
             const MessageEvent = new CustomEvent("message", {
                 detail: { 
+                    href: this.getAttribute('href'),
                     id: this._id
                 },
                 bubbles: true,
                 composed: true
             });
+            console.log(this);
+            
             this.dispatchEvent(MessageEvent);
         }
     }
