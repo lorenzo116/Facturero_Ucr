@@ -12,7 +12,7 @@ export class LinkWebComponent extends HTMLElement {
         this.shadowRoot.querySelector("a").href = this.getAttribute('href');
 
         //this.shadowRoot.querySelector("a").addEventListener("click", this);
-        this.shadowRoot.querySelector("a").addEventListener("click", (event) => {
+        /*this.shadowRoot.querySelector("a").addEventListener("click", (event) => {
 
             event.preventDefault();
 
@@ -25,7 +25,7 @@ export class LinkWebComponent extends HTMLElement {
                 composed: true
             });
             this.dispatchEvent(MessageEvent);
-        })
+        })*/
     }
     disconnectedCallback() { }
     attributeChangedCallback(name, oldValue, newValue) { }

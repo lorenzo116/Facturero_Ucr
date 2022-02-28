@@ -47,7 +47,7 @@ import page from './services/page.js';
 
 
 
-const routes = [
+/*const routes = [
     { path: "/personalinfoview", view: "<fa-personalinfoview></fa-personalinfoview>" },
     { path: "/expenseslistview", view: "<fa-expenseslistview></fa-expenseslistview>" },
     { path: "/persontaxpayeradd", view: "<fa-persontaxpayeradd></fa-persontaxpayeradd>" },
@@ -61,12 +61,33 @@ const router = (path) => {
 };
 
 document.addEventListener('message', (e) => {
-    
+
     console.log("Estoy aqui");
-    
+
     let obj = routes.find(route => route.path === e.detail.href);
 
     console.log(obj.view);
     document.querySelector("body").innerHTML = obj.view;
-})
+})*/
 
+//page('/', index)
+
+page('/homeview', () => {
+    document.querySelector("body").innerHTML = "<fa-homeview></fa-homeview>";
+})
+page('/personalinfoview', () => {
+    document.querySelector("body").innerHTML = "<fa-personalinfoview></fa-personalinfoview>";
+})
+page('/expenseslistview', () => {
+    document.querySelector("body").innerHTML = "<fa-expenseslistview></fa-expenseslistview>";
+})
+page('/persontaxpayeradd', () => {
+    document.querySelector("body").innerHTML = "<fa-persontaxpayeradd></fa-persontaxpayeradd>";
+})
+page('*', notfound)
+page()
+
+
+function notfound(ctx) {
+    console.log("not found");
+}
