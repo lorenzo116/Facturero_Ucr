@@ -39,7 +39,8 @@ import { LayoutWebComponent } from "./components/layout/layout.component";
  */
 import { PruebaWebComponent } from "./modules/prueba/prueba.component";
 import { LinkWebComponent } from "./components/link/link.component";
-
+import { CheckitemWebComponent } from "./components/checkItem/checkItem.component";
+import { SelectroomWebComponent } from "./modules/selectroomview.component/selectroomview.component";
 import "side-drawer";
 import './../style/facturero.global.scss';
 
