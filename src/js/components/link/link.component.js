@@ -11,6 +11,15 @@ export class LinkWebComponent extends HTMLElement {
     connectedCallback() {
         this.shadowRoot.querySelector("a").href = this.getAttribute('href');
 
+
+        if(this.getAttribute('type')){
+            if(this.getAttribute('type') === 'button'){
+                //this.shadowRoot.querySelector('input').classList.add('numberInput');
+                this.shadowRoot.querySelector('a').classList.add('button');
+            }
+        }
+
+
         //this.shadowRoot.querySelector("a").addEventListener("click", this);
         /*this.shadowRoot.querySelector("a").addEventListener("click", (event) => {
 

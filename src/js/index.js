@@ -15,6 +15,7 @@ import { CalendarWebComponent } from "./components/caledar/calendar.component";
 import { CreatereservationWebComponent } from "./modules/createreservation/createreservation.component";
 import { TextareaWebComponent } from "./components/textarea/textarea.component";
 import { DrawerWebComponent } from "./components/drawer/drawer.component";
+import { ButtonLinkWebComponent } from "./components/buttonlink.component/buttonlink.component";
 
 import { TexpayereditWebComponent } from "./modules/taxpayeredit/taxpayeredit.component";
 import { RadioWebComponent } from "./components/radio/radio.component";
@@ -85,6 +86,13 @@ page('/expenseslistview', () => {
 page('/persontaxpayeradd', () => {
     document.querySelector("body").innerHTML = "<fa-persontaxpayeradd></fa-persontaxpayeradd>";
 })
+page('/loginview', () => {
+    document.querySelector("body").innerHTML = "<fa-loginview></fa-loginview>";
+})
+
+
+
+
 page('*', notfound)
 page()
 

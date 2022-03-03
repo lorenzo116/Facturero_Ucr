@@ -14,6 +14,7 @@ export class ButtonWebComponent extends HTMLElement {
     connectedCallback() {
 
         //this.shadowRoot.querySelector('button').innerHTML = this.getAttribute('text');
+        
         this.shadowRoot.querySelector("button").addEventListener("click", (e) => {
             //console.log("click");
             const MessageEvent = new CustomEvent("buttonclicked", {
@@ -27,7 +28,7 @@ export class ButtonWebComponent extends HTMLElement {
         });
 
 
-
+     
 
         /*
         ! Usado para estilo, ya no sirve
