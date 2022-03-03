@@ -35,6 +35,14 @@ import { SuccessregistrationviewWebComponent } from "./modules/successregistrati
 import { TitleWebComponent } from "./components/title/title.component";
 import { ReportingviewWebComponent } from "./modules/reportingview/reportingview.component";
 import { LayoutWebComponent } from "./components/layout/layout.component";
+
+import { loadingWebComponent } from "./modules/loading/loading.component";
+import { exoneracionviewWebComponent } from "./modules/exoneracionview/exoneracionview.component";
+import { customizationviewWebComponent } from "./modules/customizationview/customizationview.component";
+import { expensesmenuviewWebComponent } from "./modules/expensesmenuview/expensesmenuview.component";
+import { expenseslistviewComponent } from "./modules/expenseslistview/expenseslistview.component";
+import { billvoidWebComponent } from "./modules/billvoid/billvoid.component";
+import { suscriptionregistrationWebComponent } from "./modules/suscriptionregistration/suscriptionregistration.component";
 /**
  *  *Este module se usa para pruebas
  */
@@ -42,6 +50,7 @@ import { PruebaWebComponent } from "./modules/prueba/prueba.component";
 import { LinkWebComponent } from "./components/link/link.component";
 import { CheckitemWebComponent } from "./components/checkItem/checkItem.component";
 import { SelectroomWebComponent } from "./modules/selectroomview.component/selectroomview.component";
+
 import "side-drawer";
 import './../style/facturero.global.scss';
 
