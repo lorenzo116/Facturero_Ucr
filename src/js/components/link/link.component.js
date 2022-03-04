@@ -17,6 +17,16 @@ export class LinkWebComponent extends HTMLElement {
                 //this.shadowRoot.querySelector('input').classList.add('numberInput');
                 this.shadowRoot.querySelector('a').classList.add('button');
             }
+            if(this.getAttribute('type') === 'secondaryButton'){
+                //this.shadowRoot.querySelector('input').classList.add('numberInput');
+                this.shadowRoot.querySelector('a').classList.add('secondaryButton');
+            }
+            if(this.getAttribute('type') === 'secondaryButtonLarge'){
+                //this.shadowRoot.querySelector('input').classList.add('numberInput');
+                this.shadowRoot.querySelector('a').classList.add('secondaryButtonLarge');
+            }
+
+
         }
 
 

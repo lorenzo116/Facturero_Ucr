@@ -98,6 +98,13 @@ page('/persontaxpayeradd', () => {
 page('/loginview', () => {
     document.querySelector("body").innerHTML = "<fa-loginview></fa-loginview>";
 })
+page('/emergencylogin', () => {
+    document.querySelector("body").innerHTML = "<fa-emergencylogin></fa-emergencylogin>";
+})
+page('/resultbillcreation', () => {
+    document.querySelector("body").innerHTML = "<fa-resultbillcreation></fa-resultbillcreation>";
+})
+
 
 
 

@@ -6,11 +6,18 @@ div{
     justify-content: center;
 }
 
-fa-paragraph{   
+fa-label{   
     padding: 1rem; 
     text-align: center;
-    font-family: 'Titillium Web', sans-serif;
-    color: white;
 }
 
+
+.grid{
+    margin-top: 15px;
+    display: grid;
+    grid-row: auto;
+    grid-gap: 40px;
+    align-items: center;
+    text-align: center;
+}
 
