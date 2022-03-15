@@ -4,24 +4,19 @@
     <span slot="fa-label-text">Agregar reservacion</span>
   </fa-label>
   <div class="detalle">
-    <fa-button>
+    <!--<fa-button>
       <span slot="fa-button-text">Agregar Cliente</span>
-    </fa-button>
+    </fa-button>-->
+    <fa-link type="button" href="/selectroomview">
+      <span slot="fa-link-label">Agregar Cliente</span>
+    </fa-link>
   </div>
-  <fa-textfield
-    for="cantidad"
-    text="Cantidad de personas"
-    type="number"
-  ></fa-textfield>
+  <fa-textfield for="cantidad" text="Cantidad de personas" type="number"></fa-textfield>
   <fa-calendar>
     <span slot="fa-calendar-text">Check in</span>
   </fa-calendar>
   <fa-calendar>
-<<<<<<< HEAD
-    <span slot="text">Check Out</span>
-=======
-    <span slot="fa-calendar-text">Check in</span>
->>>>>>> Braulio
+    <span slot="fa-calendar-text">Check Out</span>
   </fa-calendar>
   <div class="detalle">
     <fa-dropdown>

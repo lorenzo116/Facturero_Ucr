@@ -15,7 +15,6 @@ import { CalendarWebComponent } from "./components/caledar/calendar.component";
 import { CreatereservationWebComponent } from "./modules/createreservation/createreservation.component";
 import { TextareaWebComponent } from "./components/textarea/textarea.component";
 import { DrawerWebComponent } from "./components/drawer/drawer.component";
-import { ButtonLinkWebComponent } from "./components/buttonlink.component/buttonlink.component";
 
 import { TexpayereditWebComponent } from "./modules/taxpayeredit/taxpayeredit.component";
 import { RadioWebComponent } from "./components/radio/radio.component";
@@ -55,49 +54,53 @@ import "side-drawer";
 import './../style/facturero.global.scss';
 
 import page from './services/page.js';
+import { createStore } from 'redux';
 
 
 
-/*const routes = [
-    { path: "/personalinfoview", view: "<fa-personalinfoview></fa-personalinfoview>" },
-    { path: "/expenseslistview", view: "<fa-expenseslistview></fa-expenseslistview>" },
-    { path: "/persontaxpayeradd", view: "<fa-persontaxpayeradd></fa-persontaxpayeradd>" },
-    { path: "/homeview", view: "<fa-homeview></fa-homeview>" },
-    { path: "/loginview", view: "<fa-loginview></fa-loginview>" }
-]
-const router = (path) => {
-    console.log("jkidsnbhjfd");
-    let route = routes.find(route => route.path === path);
-    document.querySelector("body").innerHTML = route.view;
-};
+const reducer = (state = [], action) => {
+    console.log("reducer", state, action);
+    if (action.type === 'VIEW_CHANGED') {
+        document.querySelector("body").innerHTML = `<fa-${action.payload}></fa-${action.payload}>`;
+        return [action.payload];
+    }
+    return state;
+}
+const store = createStore(reducer);
 
-document.addEventListener('message', (e) => {
+store.subscribe(() => {
+    console.log(store.getState());
+})
 
-    console.log("Estoy aqui");
-
-    let obj = routes.find(route => route.path === e.detail.href);
-
-    console.log(obj.view);
-    document.querySelector("body").innerHTML = obj.view;
-})*/
-
-//page('/', index)
+// store.dispatch({ type: 'VIEW_CHANGED', payload: 'view' })
 
 page('/homeview', () => {
-    document.querySelector("body").innerHTML = "<fa-homeview></fa-homeview>";
+    //document.querySelector("body").innerHTML = "<fa-homeview></fa-homeview>";
+    store.dispatch({ type: 'VIEW_CHANGED', payload: 'homeview' });
 })
 page('/personalinfoview', () => {
     document.querySelector("body").innerHTML = "<fa-personalinfoview></fa-personalinfoview>";
+    store.dispatch({ type: 'VIEW_CHANGED', payload: '/personalinfoview' })
 })
 page('/expenseslistview', () => {
     document.querySelector("body").innerHTML = "<fa-expenseslistview></fa-expenseslistview>";
+    store.dispatch({ type: 'VIEW_CHANGED', payload: '/expenseslistview' })
 })
 page('/persontaxpayeradd', () => {
     document.querySelector("body").innerHTML = "<fa-persontaxpayeradd></fa-persontaxpayeradd>";
+    store.dispatch({ type: 'VIEW_CHANGED', payload: '/persontaxpayeradd' })
 })
 page('/loginview', () => {
     document.querySelector("body").innerHTML = "<fa-loginview></fa-loginview>";
+    store.dispatch({ type: 'VIEW_CHANGED', payload: '/loginview' })
 })
+page('/selectroomview', () => {
+    document.querySelector("body").innerHTML = "<fa-selectroomview></fa-selectroomview>";
+})
+page('/createreservation', () => {
+    document.querySelector("body").innerHTML = "<fa-createreservation></fa-createreservation>";
+})
+<<<<<<< Updated upstream
 page('/emergencylogin', () => {
     document.querySelector("body").innerHTML = "<fa-emergencylogin></fa-emergencylogin>";
 })
@@ -108,6 +111,8 @@ page('/resultbillcreation', () => {
 
 
 
+=======
+>>>>>>> Stashed changes
 
 page('*', notfound)
 page()
